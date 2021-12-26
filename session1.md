@@ -49,4 +49,34 @@ After installing the new app and running the start command, your new web applica
 
 ## Check in the application to Github
 
+### 1. Create a Github account 
+
+Create an account with [Github](https://github.com/) so you can store your projects online.
+
+Then create a [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) so you can authenticate from git on the command line.
+
+### 2. Create a new repository
+
+Follow this [guide](https://docs.github.com/en/get-started/quickstart/hello-world) to create a new repository:
+- Name your repo `mcon-343-demo-site`
+- Do NOT include a README file, make sure all boxes are unchecked
+
+### 3. Check in your React app to the repo
+
+Follow the steps Github shows on your new repo page. In your terminal, enter the following commands at the root of the new react app:
+
+> git init
+
+> git add . // stage all new changes
+
+> git commit -m "first commit"
+
+> git branch -M main
+
+> git remote add origin <copy-git-ref-from-your-repo-page>  // the git ref will be similar to `https://github.com/MiriamT/mcon-343-demo-site.git`
+
+> git push -u origin main
+
+Refresh your Github repo page and you should see the React app files saved to the repo.
+
 
