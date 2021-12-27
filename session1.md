@@ -93,3 +93,5 @@ Follow the commands Github shows on your new repo page. The commands are copied 
 ```
 
 Refresh your Github repo page and you should see the React app files saved to the repo. Now you are ready to start building your app!
+
+> Recommended: Learn more about Git with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).
