@@ -11,7 +11,7 @@
 
 A Single Page Application (SPA) is a web app that dynamically re-writes its content to respond to user interaction, instead of refreshing or loading a new page.
 
-> Assignment: Read more about [SPAs](https://en.wikipedia.org/wiki/Single-page_application).
+> **Assignment:** Read more about [SPAs](https://en.wikipedia.org/wiki/Single-page_application).
 
 ## Class Component state vs Functional Component hooks
 
@@ -24,7 +24,7 @@ React offers 2 ways to manage state:
 
 A Class component manages an internal `state` object that is updated by calling its `setState()` function.
 
-> Assignment: Read more about [Class components](https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
+> **Assignment:** Read more about [Class components](https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
 
 ```jsx
 import React from "react";
@@ -59,7 +59,7 @@ class ClassComponent extends React.Component {
 
 A Functional component manages state as an internal variable provided by the `useState()` hook.
 
-> Assignment: Read more about [Functional component hooks](https://reactjs.org/docs/hooks-intro.html)
+> **Assignment:** Read more about [Functional component hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ```jsx
 import React, { useState } from "react";

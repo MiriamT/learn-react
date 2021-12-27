@@ -10,7 +10,7 @@
 
 A URL (Uniform Resource Locator) is made up of several segments: a scheme, a host / domain, a port (optional), a path (optional), and a query string (optional).
 
-> Assignment: Read more about [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url)
+> **Assignment:** Read more about [URLs](https://www.ibm.com/docs/en/cics-ts/5.3?topic=concepts-components-url).
 
 ## Add React Router
 
