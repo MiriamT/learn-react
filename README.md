@@ -1,6 +1,6 @@
-# mcon-343
+# mcon-353
 
-Touro College course MCON-343: Practicum in Software Development
+Touro College course MCON-353: Practicum in Software Development
 
 ## Objectives
 

@@ -76,7 +76,7 @@ Then create a [personal access token](https://docs.github.com/en/authentication/
 
 Follow this [guide](https://docs.github.com/en/get-started/quickstart/hello-world) to create a new repository:
 
-- Name your repo `mcon-343-demo-site`
+- Name your repo `mcon-353-demo-site`
 - Do NOT include a README file, make sure all boxes are unchecked
 
 ### 3. Check in your React app to the repo
@@ -88,10 +88,10 @@ Follow the commands Github shows on your new repo page. The commands are copied 
 > git add . // stage all new changes
 > git commit -m "first commit"
 > git branch -M main
-> git remote add origin <copy-git-ref-from-your-repo-page>  // the git ref will be similar to `https://github.com/MiriamT/mcon-343-demo-site.git`
+> git remote add origin <copy-git-ref-from-your-repo-page>  // the git ref will be similar to `https://github.com/MiriamT/mcon-353-demo-site.git`
 > git push -u origin main
 ```
 
 Refresh your Github repo page and you should see the React app files saved to the repo. Now you are ready to start building your app!
 
-> Recommended: Learn more about Git with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).
+> **Recommended:** Learn more about Git with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).
