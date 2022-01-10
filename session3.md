@@ -168,8 +168,9 @@ Create a new top-level component named `<Todo>` nested under the main `<App>`.
 The `Todo` component should render a UI to enable users to:
 
 1. Create a new Todo item with a custom `title` and `description`
-2. Delete an existing Todo item
-3. View all Todo items
+2. View all Todo items
+3. Complete an existing Todo item
+4. Delete an existing Todo item
 
 Use components from the [Material UI library](https://mui.com/components/buttons/) to improve the user experience.
 
