@@ -175,3 +175,5 @@ The `Todo` component should render a UI to enable users to:
 Use components from the [Material UI library](https://mui.com/components/buttons/) to improve the user experience.
 
 Feeling fancy? Add drag-and-drop functionality to allow users to sort their Todo items.
+
+![](./images/session3_complete.png)

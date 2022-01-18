@@ -123,7 +123,7 @@ ReactDOM.render(<App />, mountNode);
 
 The general idea of reducers is to simplify app logic by limiting the way that state can be changed. Instead of letting any code directly update state, changes are triggered through predefined `actions`. When an action is triggered, a `reducer` processes it and updates the state. Since only reducers can update state, and reducers only process actions, state update logic is separated from the rest of app logic. The app can still read the state, but if updates are required based on user interaction the app will trigger an action and let the reducer handle the rest.
 
-> **Assignment:** Read more about [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer).
+> **Assignment:** Read more about [`useReducer`](https://reactjs.org/docs/hooks-reference.html#usereducer). You can also check out [A Cartoon Intro to Redux](https://code-cartoons.com/articles/a-cartoon-intro-to-redux/)
 
 Let's demonstrate a basic reducer by re-writing our counter to use the `useReducer` hook instead of the `useState` hook.
 
@@ -195,3 +195,5 @@ ReactDOM.render(<ReducerCounter />, mountNode);
 ## Assignment: Move the todo items to global state with a reducer
 
 Use React Context and `useReducer` to move the todo item state and logic to the main `App` component. Since the state will be stored in a parent component of the routes, the todo data will be not be lost when navigating back and forth between app pages.
+
+> **Note:** reducer functions must be pure functions since React might call the reducer function more than once for a single action. If you are saving arrays and objects in state, make sure to make deep copies before mutating the data. Do not modify the state object directly.

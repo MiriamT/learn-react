@@ -34,3 +34,5 @@ To connect your header links to the routes, bind React Router's [`useNavigate()`
 You should now be able to navigate back and forth between your home page and todo page by clicking on the navigation items in the header.
 
 Uh oh! The todo app loses its data when you navigate back and forth from the the `/todo` page. Let's fix that in the next session by adding global state to the app.
+
+![](./images/session4_complete.png)

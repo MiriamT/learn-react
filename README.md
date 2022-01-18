@@ -29,7 +29,7 @@ Build a home page that links to a todo list, a chat, and a dashboard.
   - demo-site/todo
   - demo-site/chat
   - demo-site/dashboard
-- Use Redux for state management
+- Use React Context or Redux for state management
 - Fetch data from an API
 - Test each page with React Testing Library
 - Host the site on Github
