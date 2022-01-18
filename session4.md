@@ -35,4 +35,4 @@ You should now be able to navigate back and forth between your home page and tod
 
 Uh oh! The todo app loses its data when you navigate back and forth from the the `/todo` page. Let's fix that in the next session by adding global state to the app.
 
-![](./images/session4_complete.png)
+![Session 4 Complete](https://github.com/MiriamT/mcon-353/blob/main/images/session4_complete.png?raw=true)

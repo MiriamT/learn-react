@@ -119,3 +119,5 @@ Replace the current content of `App.js` and create a personal home page. Include
 Use additional MUI components instead of basic `h` or `p` elements to make your page more interesitng.
 
 Each MUI component has 2 doc pages in the left-hand side bar. The "Components" section shows usage examples, and the "Component API" section lists the full set of supported properties. For example, this is the [Components/Button](https://mui.com/components/buttons/) page and this is the corresponding [Component API/Button](https://mui.com/api/button/) page.
+
+![Session 2 Complete](https://github.com/MiriamT/mcon-353/blob/main/images/session2_complete.png?raw=true)

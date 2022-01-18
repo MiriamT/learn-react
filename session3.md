@@ -176,4 +176,4 @@ Use components from the [Material UI library](https://mui.com/components/buttons
 
 Feeling fancy? Add drag-and-drop functionality to allow users to sort their Todo items.
 
-![](./images/session3_complete.png)
+![Session 3 Complete](https://github.com/MiriamT/mcon-353/blob/main/images/session3_complete.png?raw=true)
