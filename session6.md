@@ -86,7 +86,134 @@ To try it yourself, sign up for a weather API key [here](https://openweathermap.
 Now that we are familiar with REST APIs and the JSON data format, let's call one using JavaScript's built-in `fetch` function:
 
 ```js
+fetch(
+  "https://api.openweathermap.org/data/2.5/weather?zip=10282,us&appid=XXXXX"
+)
+  .then((response) => response.json()) // pull the json out of the response
+  .then((data) => console.log(data)); // get the json data as a javascript object
+```
 
+`fetch` is based off of [JavaScript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), which are asynchronous. When the promise resolves at some future time, it will run the code in the `.then()` function. Sometimes a promise will return another promise, so you can "chain" the `.then()` calls to resolve subsequent promises. In the code snippet above, `response.json()` returns another promise so `.then()` is called a second time to process the data that the second promise returns.
+
+> **Assignment:** Read more about [JavaScript's Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+`fetch` will call the HTTP `GET` method type by default. To call a different [HTTP method](https://restfulapi.net/http-methods/) and send data as part of the API call, you would write something like this:
+
+```js
+const data = {...};
+
+fetch(url, {
+  method: "POST", // *GET, POST, PUT, DELETE, etc.
+  headers: {
+    "Content-Type": "application/json", // tells REST that we will send the body data in JSON format
+  },
+  body: JSON.stringify(data),
+}).then(...);
 ```
 
 ## Assignment: Create a Chat room
+
+Create a new top-level component named `<Chat>` nested under the main `<App>`. The `<Chat>` component should be rendered at the `/chat` path, and a "Chat" link should be added to the app header to render this new page.
+
+The `<Chat>` page will use APIs to send and receive chatroom messages. It should enable users to:
+
+1. Create a username
+2. Create a new chatroom
+3. See messages displayed in a chatroom
+4. Post messages to a chatroom
+
+The author has built APIs on AWS to manage the backend data, your UI just needs to call them:
+
+- GET /chats
+- GET /chats/{id}/messages
+- PUT /chats
+- PUT /messages
+
+### GET /chats
+
+Returns all the chat rooms as an array of objects.
+
+### GET /chats/{id}/messages
+
+Returns all the messages in the chatroom with the given `id` as an array of objects.
+
+For example: `/chats/class/messages` would return messages for a chatroom that has an `id` with a value of `class`.
+
+### PUT /chats
+
+Creates a new chat with the data provided in the body, and returns the created chat object.
+
+Example body:
+
+```js
+{
+  id: 'newChat', // required
+  name: 'New Chat' // required
+}
+```
+
+Example response:
+
+```js
+{
+  // same data is returned
+  id: 'newChat',
+  name: 'New Chat'
+}
+```
+
+### PUT /messages
+
+Creates a new message with the data provided in the body, and returns the created message object.
+
+Example body:
+
+```js
+{
+  chatId: 'newChat', // required, must be an existing chat id
+  username: 'newUser', // required
+  text: 'hello!' // required
+}
+```
+
+Example response:
+
+```js
+{
+  // new data is returned
+  chatId: 'newChat',
+  username: 'newUser',
+  text: 'hello!',
+  id: 'ae34a5c7-4704-4246-b5b9-2d3d06c4e189', // id created by the server
+  isoDate: '2022-01-19T01:36:40.068Z', // timestamp (in ISO Date format) created by the server
+}
+```
+
+### Calling the APIs
+
+The base url for the API calls is: `https://z36h06gqg7.execute-api.us-east-1.amazonaws.com/`
+
+Below is an example `fetch` call to get the chats:
+
+```js
+fetch("https://z36h06gqg7.execute-api.us-east-1.amazonaws.com/chats")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+```
+
+This PUT call will create a new chat:
+
+```js
+const chat = {
+  id: 'secret',
+  name: 'Secret Club'
+};
+
+fetch('https://z36h06gqg7.execute-api.us-east-1.amazonaws.com/chats', {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json", // tells REST that we will send the body data in JSON format
+  },
+  body: JSON.stringify(chat),
+}).then(...);
+```

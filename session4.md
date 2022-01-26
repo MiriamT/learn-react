@@ -4,7 +4,7 @@
 
 - Learn the components of a URL
 - Add React Router to render content based on the url path
-- Create an app header that links to each page
+- Assignment: Create an app header that links to each page
 
 ## Learn the components of a URL
 
@@ -23,7 +23,7 @@ Test out your router by visiting the following urls:
 - `localhost:3000` // should show your home page
 - `localhost:3000/todo` // should show your todo page
 
-## Create an app header
+## Assignment: Create an app header
 
 Create a Header for your application that links to the different pages in your app.
 
