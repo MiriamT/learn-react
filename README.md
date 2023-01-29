@@ -1,8 +1,8 @@
-# Learn React
+# Learn React!
 
 A guided tutorial to teach the basics of modern web app development with ReactJs. You'll have a multi-page React app hosted on Github by the end of the tutorial. Here's an [example](https://miriamt.github.io/mcon-353-demo-site/).
 
-This repo is structured as a series of sequential "session" files. Each file starts by introducing new concepts in web development or React and ends with a hands-on assignment for you to build the next part of your demo app.
+This repo is structured as a series of sequential "session" files. Each session starts by introducing new concepts in web development or React and ends with a hands-on assignment for you to build the next part of your demo app.
 
 This material is used by the Author as a basis for teaching the Practicum in Software Development course in Touro University. I hope you find it useful too!
 
@@ -16,9 +16,9 @@ This material is used by the Author as a basis for teaching the Practicum in Sof
 - Git / CICD with Github
 - Design System experience with Material UI
 
-## Demo Site Requirements
+## Demo App Features
 
-Build a web app that features a home page, a todo list, and a chat room.
+This tutorial will walk you through building a web app that features a home page, a todo list, and a chat room.
 
 - Set up a new React app with Git and Create React App
 - Use Material UI components for consistent design

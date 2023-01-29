@@ -31,9 +31,7 @@ The best place to learn about React is their documentation. To get started, we n
 - [Rendering Elements](https://reactjs.org/docs/rendering-elements.html)
 - [Components and Props](https://reactjs.org/docs/components-and-props.html)
 
-> **Assignment:** Read the article ["Thinking in React"](https://reactjs.org/docs/thinking-in-react.html)
-
-> **Recommended:** For more hands-on experience with React, follow this step-by-step [tutorial](https://reactjs.org/tutorial/tutorial.html).
+> **Recommended:** Read the article ["Thinking in React"](https://reactjs.org/docs/thinking-in-react.html)
 
 ## Add Material UI components
 

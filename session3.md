@@ -11,7 +11,7 @@
 
 A Single Page Application (SPA) is a web app that dynamically re-writes its content to respond to user interaction, instead of refreshing or loading a new page.
 
-> **Assignment:** Read more about [SPAs](https://en.wikipedia.org/wiki/Single-page_application).
+> **Recommended:** Read more about [SPAs](https://en.wikipedia.org/wiki/Single-page_application).
 
 ## Class Components vs Function Components
 
@@ -26,7 +26,7 @@ In general, React Function components are simpler to write than Class components
 
 A Class component manages an internal `state` object that is updated by calling its `setState()` function.
 
-> **Assignment:** Read more about [Class components](https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
+> **Recommended:** Read more about [Class components](https://reactjs.org/docs/state-and-lifecycle.html#converting-a-function-to-a-class)
 
 ```jsx
 import React from "react";
@@ -61,7 +61,7 @@ class ClassComponent extends React.Component {
 
 A Function component manages state as an internal variable injected by the `useState()` hook.
 
-> **Assignment:** Read more about [Function component hooks](https://reactjs.org/docs/hooks-intro.html)
+> **Recommended:** Read more about [Function component hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ```jsx
 import React, { useState } from "react";
@@ -162,6 +162,8 @@ const FunctionCounter = () => {
 ```
 
 [Live example](https://jscomplete.com/playground/s782519)
+
+> **Recommended:** For more hands-on experience with React state, follow this step-by-step [tutorial](https://reactjs.org/tutorial/tutorial.html).
 
 ## Assignment: Create a Todo list
 

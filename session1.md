@@ -84,8 +84,8 @@ Run the commands in your terminal at the root folder of the new react app (the s
 
 Refresh your Github repo page and you should see the React app files saved to the repo.
 
-![Saved repo](https://github.com/MiriamT/learn-react/blob/main/images/session1_github_repo.png?raw=true)
-
 Now you are ready to start building your app!
 
 > **Recommended:** New to Git? Learn the basic commands with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).
+
+![Saved repo](https://github.com/MiriamT/learn-react/blob/main/images/session1_github_repo.png?raw=true)
