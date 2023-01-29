@@ -3,7 +3,7 @@
 ## Objectives
 
 - What is an SPA?
-- Class Component state vs Functional Component hooks
+- Class Components vs Function Components
 - Code a simple counter component
 - Assignment: Create a todo list
 
@@ -13,12 +13,14 @@ A Single Page Application (SPA) is a web app that dynamically re-writes its cont
 
 > **Assignment:** Read more about [SPAs](https://en.wikipedia.org/wiki/Single-page_application).
 
-## Class Component state vs Functional Component hooks
+## Class Components vs Function Components
 
-React offers 2 ways to manage state:
+React components can be defined in 2 ways:
 
-1. a `state` object that exists in Class components (components that extend from `React.Component`)
-2. state variables injected into Functional components via the `useState` hook
+1. `Class Components` - JavaScript classes that extend from `React.Component`
+2. `Function Components` - JavaScript functions that accept a `props` object and returns a React element
+
+In general, React Function components are simpler to write than Class components and have most of the same functionality when used with React hooks. Try creating your components first as Function components and then upgrade them to Class components later if needed.
 
 ### Class Component State
 
@@ -55,18 +57,18 @@ class ClassComponent extends React.Component {
 
 [Live example](https://jscomplete.com/playground/s782493)
 
-### Functional Component Hooks
+### Function Component Hooks
 
-A Functional component manages state as an internal variable provided by the `useState()` hook.
+A Function component manages state as an internal variable injected by the `useState()` hook.
 
-> **Assignment:** Read more about [Functional component hooks](https://reactjs.org/docs/hooks-intro.html)
+> **Assignment:** Read more about [Function component hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ```jsx
 import React, { useState } from "react";
 
-const FunctionalComponent = () => {
+const FunctionComponent = () => {
   // destructure a named variable and a setter function from the `useState` hook
-  // the default value of the variable is passed as an arg to `useState`
+  // the default value of the variable is passed as an arg when calling `useState()`
   const [name, setName] = useState("Miriam");
 
   return (
@@ -86,7 +88,7 @@ const FunctionalComponent = () => {
 
 ## Code a simple counter component
 
-To demonstrate the difference between Class Component state and Functional component hooks, we will code a simple Counter component using both methods of state management.
+To demonstrate the difference between Class Component state and Function component hooks, we will code a simple Counter component using both methods of state management.
 
 ### Class Component Counter
 
@@ -133,12 +135,12 @@ class ClassCounter extends React.Component {
 
 [Live example](https://jscomplete.com/playground/s782503)
 
-### Functional Component Counter
+### Function Component Counter
 
 ```jsx
 import React, { useState } from "react";
 
-const FunctionalCounter = () => {
+const FunctionCounter = () => {
   const [count, setCount] = useState(0);
 
   function increment() {
@@ -167,7 +169,7 @@ Create a new top-level component named `<Todo>` nested under the main `<App>`.
 
 The `Todo` component should render a UI to enable users to:
 
-1. Create a new Todo item with a custom `title` and `description`
+1. Create a new Todo item with a custom `title`
 2. View all Todo items
 3. Complete an existing Todo item
 4. Delete an existing Todo item
@@ -176,4 +178,4 @@ Use components from the [Material UI library](https://mui.com/components/buttons
 
 Feeling fancy? Add drag-and-drop functionality to allow users to sort their Todo items.
 
-![Session 3 Complete](https://github.com/MiriamT/mcon-353/blob/main/images/session3_complete.png?raw=true)
+![Session 3 Complete](https://github.com/MiriamT/learn-react/blob/main/images/session3_complete.png?raw=true)

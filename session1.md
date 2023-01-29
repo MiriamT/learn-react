@@ -17,14 +17,7 @@ Once installed, open the Visual Studio Code editor and add the following plugins
 
 Follow this [guide](https://scottsauber.com/2017/06/10/prettier-format-on-save-never-worry-about-formatting-javascript-again/) to setup prettier formatting on save.
 
-### 2. Install ZSH and the [Oh My ZSH](https://ohmyz.sh/) terminal (optional)
-
-- On [Mac](https://github.com/ohmyzsh/ohmyzsh/wiki)
-- On [Windows](https://dev.to/vsalbuq/how-to-install-oh-my-zsh-on-windows-10-home-edition-49g2)
-
-Note: ZSH is Linux-based and does not run perfectly on Windows. It generally offers a better developer experience, but you may need to run certain commands from CMD or Powershell.
-
-### 3. Install [NodeJS v18](https://nodejs.org/en/)
+### 2. Install [NodeJS v18](https://nodejs.org/en/)
 
 Note: you might have done this as part of installing ZSH.
 
@@ -36,7 +29,7 @@ Check that you have the correct version installed:
 
 It should print `v18.x.x`.
 
-### 4. Install [Git](https://git-scm.com/downloads)
+### 3. Install [Git](https://git-scm.com/downloads)
 
 Note: you might have done this as part of installing ZSH.
 
@@ -48,17 +41,17 @@ Check that you have the correct version installed:
 
 It should print `v2.x.x`.
 
-### 5. Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) plugin for Chrome
+### 4. Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) plugin for Chrome
 
-Most web developers use Chrome, and most React developers use the React Devtools plugin. It will make your life easier.
+This will make your life easier when debugging issues in your React app.
 
 ## Create a new React application
 
-Use [Create React App](https://create-react-app.dev/) to create a new React app called demo-app:
+Use [Create React App](https://create-react-app.dev/) to create a new React app called react-demo-app:
 
 ```
-> npx create-react-app demo-app
-> cd demo-app
+> npx create-react-app react-demo-app
+> cd react-demo-app
 > npm start
 ```
 
@@ -76,22 +69,23 @@ Then create a [personal access token](https://docs.github.com/en/authentication/
 
 Follow this [guide](https://docs.github.com/en/get-started/quickstart/hello-world) to create a new repository:
 
-- Name your repo `mcon-353-demo-site`
+- Name your repo `react-demo-app`
 - Do NOT include a README file, make sure all boxes are unchecked
+
+![New Github repo](https://github.com/MiriamT/learn-react/blob/main/images/session1_new_repo.png?raw=true)
 
 ### 3. Check in your React app to the repo
 
-Follow the commands Github shows on your new repo page. The commands are copied below with specific insutrctions for this course. Run them in your terminal at the root of the new react app:
+Follow the commands Github shows on your new repo page for "push an existing repository from the command line".
 
-```
-> git init
-> git add . // stage all new changes
-> git commit -m "first commit"
-> git branch -M main
-> git remote add origin <copy-git-ref-from-your-repo-page>  // the git ref will be similar to `https://github.com/MiriamT/mcon-353-demo-site.git`
-> git push -u origin main
-```
+Run the commands in your terminal at the root folder of the new react app (the same location where you ran "npm start" to start your web app):
 
-Refresh your Github repo page and you should see the React app files saved to the repo. Now you are ready to start building your app!
+![Push new repo](https://github.com/MiriamT/learn-react/blob/main/images/session1_push_repo.png?raw=true)
 
-> **Recommended:** Learn more about Git with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).
+Refresh your Github repo page and you should see the React app files saved to the repo.
+
+![Saved repo](https://github.com/MiriamT/learn-react/blob/main/images/session1_github_repo.png?raw=true)
+
+Now you are ready to start building your app!
+
+> **Recommended:** New to Git? Learn the basic commands with this [interactive tutorial](https://learngitbranching.js.org/?locale=en_US).

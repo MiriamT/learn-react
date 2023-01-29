@@ -79,7 +79,7 @@ To try it yourself, sign up for a weather API key [here](https://openweathermap.
 
 [Postman](https://www.postman.com/downloads/) is a great tool for exploring REST APIs. Install Postman and use it to call one the apis above:
 
-![Postman Example](https://github.com/MiriamT/mcon-353/blob/main/images/session6_postman.png?raw=true)
+![Postman Example](https://github.com/MiriamT/learn-react/blob/main/images/session6_postman.png?raw=true)
 
 ## Call an API in JavaScript using `fetch`
 

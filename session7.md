@@ -225,4 +225,4 @@ render(
 - https://testing-library.com/docs/react-testing-library/cheatsheet/
 - https://testing-library.com/docs/example-react-router
 
-![Session 7 Complete](https://github.com/MiriamT/mcon-353/blob/main/images/session7_complete.png?raw=true)
+![Session 7 Complete](https://github.com/MiriamT/learn-react/blob/main/images/session7_complete.png?raw=true)
