@@ -8,7 +8,7 @@
 
 ## What is Github Pages?
 
-[Github Pages](https://pages.github.com/) is a Github feature that enables you to host websites from your Github repositories. Github serves all of your project sites from a personal url tied to your username. The website content is pushed to a special Github Pages branch in your repo, usually named ``, and Github serves that content when users access the Github Pages url for the repo.
+[Github Pages](https://pages.github.com/) is a Github feature that enables you to host websites from your Github repositories. Github serves all of your project sites from a personal url tied to your username. The website content is pushed to a special Github Pages branch in your repo, usually named `gh-pages`, and Github serves that content when users access the Github Pages url for the repo.
 
 Github Pages has 2 kinds of websites: a `User site` and a `Project site`. Each Github user only gets 1 User site, hosted at the root of their Github pages url (for example: `https://myusername.github.io`). Project sites are tied to repositories, and you can have 1 per repo (for example: `https://myusername.github.io/my-repo`). The project sites are hosted at urls nested under your main Github User site, but you don't need a User site to create Project sites.
 

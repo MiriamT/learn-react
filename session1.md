@@ -24,7 +24,7 @@ Follow this [guide](https://scottsauber.com/2017/06/10/prettier-format-on-save-n
 
 Note: ZSH is Linux-based and does not run perfectly on Windows. It generally offers a better developer experience, but you may need to run certain commands from CMD or Powershell.
 
-### 3. Install [NodeJS v16 ](https://nodejs.org/en/)
+### 3. Install [NodeJS v18](https://nodejs.org/en/)
 
 Note: you might have done this as part of installing ZSH.
 
@@ -34,7 +34,7 @@ Check that you have the correct version installed:
 > node -v
 ```
 
-It should print `v16.x.x`.
+It should print `v18.x.x`.
 
 ### 4. Install [Git](https://git-scm.com/downloads)
 
