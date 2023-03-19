@@ -1,6 +1,6 @@
 # Learn React!
 
-A guided tutorial to teach the basics of modern web app development with ReactJs. You'll have a multi-page React app hosted on Github by the end of the tutorial. Here's an [example](https://miriamt.github.io/mcon-353-demo-site/).
+A guided tutorial to teach the basics of modern web app development with ReactJs. You'll have a multi-page React app hosted on Github by the end of the tutorial. Here's an [example](https://miriamt.github.io/learn-react-demo-app/).
 
 This repo is structured as a series of sequential "session" files. Each session starts by introducing new concepts in web development or React and ends with a hands-on assignment for you to build the next part of your demo app.
 

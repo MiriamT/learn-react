@@ -24,4 +24,4 @@ Follow the Guide above to deploy your Demo Site app to Github Pages.
 
 The Demo Site is currently using `BrowserRouter` for page navigation, [which is not supported on Github Pages](https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing). An easy fix for the Demo Site app is to replace `BrowserRouter` with `HashRouter`, which is also exported from `'react-router-dom'`. HashRouter will add a hash (`#`) into the url which becomes the base for relative page routing.
 
-Here is an example Demo Site hosted on Github Pages: https://miriamt.github.io/mcon-353-demo-site/
+Here is an example Demo Site hosted on Github Pages: https://miriamt.github.io/learn-react-demo-app/
